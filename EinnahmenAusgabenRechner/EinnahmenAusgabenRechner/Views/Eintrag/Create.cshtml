@@ -1,0 +1,74 @@
+@model EinnahmenAusgabenRechner.Models.Eintrag
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Eintrag</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Betrag" class="control-label"></label>
+                <input asp-for="Betrag" class="form-control" type="number" />
+                <span asp-validation-for="Betrag" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Datum" class="control-label"></label>
+                <input asp-for="Datum" type="date" class="form-control"/>
+                <span asp-validation-for="Datum" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Beschreibung" class="control-label"></label>
+                <input asp-for="Beschreibung" class="form-control" />
+                <span asp-validation-for="Beschreibung" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="KategorieId" class="control-label"></label>
+                <select asp-for="KategorieId" class="form-control" >
+                    <option></option>
+                    @foreach (var Kat in (List<Kategorie>)ViewData["kategorien"])
+                    {
+                        <option value="@Kat.Id">@Kat.Bezeichnung</option>
+
+
+                    }
+                    
+                </select>
+                
+                <span asp-validation-for="KategorieId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="EintragTypId" class="control-label"></label>
+                <Select asp-for="EintragTypId" class="form-control" >
+                    <option></option>
+                    @foreach (var Eintragtyp in (List<EintragTyp>) ViewData["Eintragstypen"])
+                    {
+                        <option value="@Eintragtyp.Id">@Eintragtyp.Bezeichnung</option>
+
+                        
+                    }
+                </Select>
+                <span asp-validation-for="EintragTypId" class="text-danger"></span>
+            </div>
+
+           
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

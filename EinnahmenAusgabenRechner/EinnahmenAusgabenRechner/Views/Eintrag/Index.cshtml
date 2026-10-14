@@ -1,0 +1,119 @@
+@using EinnahmenAusgabenRechner.ViewModels
+@model EintragenViewModel
+
+@{
+	ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<form asp-controller="Eintrag" asp-action="Index" method="get">
+	<div>
+		<label asp-for="SearchBeschreibung"></label>
+		<input asp-for="SearchBeschreibung" />
+	</div>
+	<div>
+		<label asp-for="SearchDatumVon"></label>
+		<input type="date" asp-for="SearchDatumVon" />
+	</div>
+	<div>
+		<label asp-for="SearchDatumBis"></label>
+		<input type="date" asp-for="SearchDatumBis" />
+	</div>
+	<div>
+		<label asp-for="SearchEintragTyp"></label>
+		<select asp-for="SearchEintragTyp">
+			<option></option>
+			@foreach (var Eintragtyp in (List<EintragTyp>)ViewData["Eintragstypen"])
+			{
+				<option value="@Eintragtyp.Id">@Eintragtyp.Bezeichnung</option>
+			}
+		</select>
+
+	</div>
+	<div>
+		<label asp-for="SearchKategorie"></label>
+		<select asp-for="SearchKategorie">
+			<option></option>
+			@foreach (var Kat in (List<Kategorie>)ViewData["kategorien"])
+			{
+				<option value="@Kat.Id">@Kat.Bezeichnung</option>
+			}
+		</select>
+
+	</div>
+	<div>
+		<label asp-for="AnzahlEintraege"></label>
+		<select asp-for="AnzahlEintraege">
+			<option></option>
+			<option>10</option>
+			<option>50</option>
+		</select>
+	</div>
+	<button type="submit">Abschicken</button>
+</form>
+<div><a href="/">Zurücksetzen</a></div>
+<p>
+	<a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				Betrag
+			</th>
+			<th>
+				Datum
+			</th>
+			<th>
+				Beschreibung
+			</th>
+			<th>
+				KategorieId
+			</th>
+			<th>
+				EintragsTypId
+			</th>
+			<th>
+				Kategorie
+			</th>
+			<th>
+				EintragTyp
+			</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model.Eintragen)
+		{
+			<tr style="background-color: @item.Kategorie?.Farbe">
+				<td>
+					@Html.DisplayFor(model => item.Betrag)
+				</td>
+				<td>
+					@Html.DisplayFor(model => item.Datum)
+				</td>
+				<td>
+					@Html.DisplayFor(model => item.Beschreibung)
+				</td>
+				<td>
+					@Html.DisplayFor(model => item.KategorieId)
+				</td>
+				<td>
+					@Html.DisplayFor(model => item.EintragTypId)
+				</td>
+				<td>
+					@Html.DisplayFor(model => item.Kategorie)
+				</td>
+				<td>
+					@Html.DisplayFor(model => item.EintragTyp)
+				</td>
+				<td>
+					<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+					<a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+					<a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>

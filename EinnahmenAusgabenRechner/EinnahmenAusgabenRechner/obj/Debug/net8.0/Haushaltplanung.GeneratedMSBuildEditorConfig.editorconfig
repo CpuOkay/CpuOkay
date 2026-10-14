@@ -1,0 +1,109 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Haushaltplanung
+build_property.RootNamespace = Haushaltplanung
+build_property.ProjectDir = C:\Git\LAP-Vorbereitung-AP10\Haushaltplanung\Haushaltplanung\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Git\LAP-Vorbereitung-AP10\Haushaltplanung\Haushaltplanung
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Git/LAP-Vorbereitung-AP10/Haushaltplanung/Haushaltplanung/Views/BuchungTyp/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVjaHVuZ1R5cFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/LAP-Vorbereitung-AP10/Haushaltplanung/Haushaltplanung/Views/BuchungTyp/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVjaHVuZ1R5cFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/LAP-Vorbereitung-AP10/Haushaltplanung/Haushaltplanung/Views/BuchungTyp/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVjaHVuZ1R5cFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/LAP-Vorbereitung-AP10/Haushaltplanung/Haushaltplanung/Views/BuchungTyp/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVjaHVuZ1R5cFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/LAP-Vorbereitung-AP10/Haushaltplanung/Haushaltplanung/Views/BuchungTyp/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVjaHVuZ1R5cFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/LAP-Vorbereitung-AP10/Haushaltplanung/Haushaltplanung/Views/Buchung/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVjaHVuZ1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/LAP-Vorbereitung-AP10/Haushaltplanung/Haushaltplanung/Views/Buchung/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVjaHVuZ1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/LAP-Vorbereitung-AP10/Haushaltplanung/Haushaltplanung/Views/Buchung/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVjaHVuZ1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/LAP-Vorbereitung-AP10/Haushaltplanung/Haushaltplanung/Views/Buchung/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVjaHVuZ1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/LAP-Vorbereitung-AP10/Haushaltplanung/Haushaltplanung/Views/Buchung/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVjaHVuZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/LAP-Vorbereitung-AP10/Haushaltplanung/Haushaltplanung/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/LAP-Vorbereitung-AP10/Haushaltplanung/Haushaltplanung/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/LAP-Vorbereitung-AP10/Haushaltplanung/Haushaltplanung/Views/Kategorie/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcmllXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/LAP-Vorbereitung-AP10/Haushaltplanung/Haushaltplanung/Views/Kategorie/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcmllXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/LAP-Vorbereitung-AP10/Haushaltplanung/Haushaltplanung/Views/Kategorie/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcmllXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/LAP-Vorbereitung-AP10/Haushaltplanung/Haushaltplanung/Views/Kategorie/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcmllXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/LAP-Vorbereitung-AP10/Haushaltplanung/Haushaltplanung/Views/Kategorie/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcmllXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/LAP-Vorbereitung-AP10/Haushaltplanung/Haushaltplanung/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/LAP-Vorbereitung-AP10/Haushaltplanung/Haushaltplanung/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/LAP-Vorbereitung-AP10/Haushaltplanung/Haushaltplanung/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/LAP-Vorbereitung-AP10/Haushaltplanung/Haushaltplanung/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/LAP-Vorbereitung-AP10/Haushaltplanung/Haushaltplanung/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-7yosrwsqd6

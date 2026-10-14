@@ -1,0 +1,39 @@
+﻿@using EinnahmenAusgabenRechner.ViewModels
+@model StatistikViewmodel
+<div>
+	<form asp-action="Index" method="get">
+
+		<label asp-for="KategorieId"></label>
+		<select asp-for="KategorieId">
+			<option>Alle</option>
+			@foreach (var mitglied in (List<Kategorie>)ViewData["Kategorien"])
+			{
+				<option value="@mitglied.Id">@mitglied.Id @mitglied.Bezeichnung</option>
+			}
+		</select>
+		<div>
+			<label asp-for="DatumVon"></label>
+			<input asp-for="DatumVon" type="date"/>
+			<label asp-for="DatumBis"></label>
+			<input asp-for="DatumBis" type="date" />
+		</div>
+		<input type="submit" value="Absenden" />
+		<a href="/Statistik/Index/">Zurücksetzen</a>
+	</form>
+	
+</div>
+<div>
+	<span>Avg Einnahmen: € @Model.DurchschnittEinnahmen</span>
+	<span>Avg Ausgaben: € @Model.DurchschnittAusgaben</span>
+</div>
+
+<div>
+	<span>Anzahl Einnahmen: @Model.AnzahlEinnahmen</span>
+	<span>Anzahl Ausgaben: @Model.AnzahlAusgaben</span>
+	<span>Summe aller Ein- und Ausgaben: @Model.AnzahlEinUndAusgaben</span>
+</div>
+
+<div>
+	<img src="/Statistik/FuenfHoechsteAusgaben/?KategorieId=@Model.KategorieId&DatumVon=@Model.DatumVon&DatumBis=@Model.DatumBis" style="height:400px;" />
+	<img src="/Statistik/FuenfHoechsteinnahmen/?KategorieId=@Model.KategorieId&DatumVon=@Model.DatumVon&DatumBis=@Model.DatumBis" style="height:400px;" />
+</div>
